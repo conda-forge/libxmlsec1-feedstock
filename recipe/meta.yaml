@@ -1,4 +1,4 @@
-{% set version = "1.2.29" %}
+{% set version = "1.2.31" %}
 
 package:
   name: libxmlsec1
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://www.aleksey.com/xmlsec/download/xmlsec1-{{ version }}.tar.gz
-  sha256: b1d1deba966019930f608d1f2b95c40ca3450f1393bcd3a3c001a8ba1d2839ab
+  sha256: 9b10bc52cc31e4f76162e3975e50db26b71ab49c571d810b311ca626be5a0b26
 
 build:
   number: 0
