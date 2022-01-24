@@ -9,7 +9,7 @@ source:
   sha256: 26041d35a20a245ed5a2fb9ee075f10825664d274220cb5190340fa87a4d0931
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
