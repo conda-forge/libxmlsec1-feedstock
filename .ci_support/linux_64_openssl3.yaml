@@ -3,7 +3,7 @@ c_compiler:
 c_compiler_version:
 - '10'
 cdt_name:
-- cos7
+- cos6
 channel_sources:
 - conda-forge
 channel_targets:
@@ -13,23 +13,14 @@ docker_image:
 icu:
 - '70'
 libiconv:
-- '1.16'
+- '1'
 libxml2:
 - '2.9'
 openssl:
-- 1.1.1
-pin_run_as_build:
-  libiconv:
-    max_pin: x.x
-  libxml2:
-    max_pin: x.x
-  xz:
-    max_pin: x.x
-  zlib:
-    max_pin: x.x
+- '3'
 target_platform:
-- linux-ppc64le
+- linux-64
 xz:
-- '5.2'
+- '5'
 zlib:
 - '1.2'
