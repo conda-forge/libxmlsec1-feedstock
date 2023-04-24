@@ -7,6 +7,8 @@ package:
 source:
   url: https://www.aleksey.com/xmlsec/download/xmlsec1-{{ version }}.tar.gz
   sha256: df3ad2548288411fc3d44c20879e4c4e90684a1a4fb76a06ae444f957171c9a6
+  patches:
+    - newline.patch  # https://github.com/lsh123/xmlsec/issues/626
 
 build:
   number: 0
