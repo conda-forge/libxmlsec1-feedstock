@@ -15,6 +15,7 @@ export LIBXML_LIBS="-lxml2"
     --with-libxml="${PREFIX}" \
     --with-xslt="${PREFIX}" \
     --with-gcrypt="${PREFIX}"
+
 make -j${CPU_COUNT} ${VERBOSE_AT}
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
 make check
