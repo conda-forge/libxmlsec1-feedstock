@@ -11,7 +11,7 @@ source:
     - newline.patch  # https://github.com/lsh123/xmlsec/issues/626
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
