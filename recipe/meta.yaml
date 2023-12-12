@@ -7,9 +7,11 @@ package:
 source:
   url: https://www.aleksey.com/xmlsec/download/xmlsec1-{{ version }}.tar.gz
   sha256: 4003c56b3d356d21b1db7775318540fad6bfedaf5f117e8f7c010811219be3cf
+  patches:
+    - 729.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
