@@ -1,4 +1,4 @@
-{% set version = "1.3.2" %}
+{% set version = "1.3.3" %}
 
 package:
   name: libxmlsec1
@@ -6,12 +6,10 @@ package:
 
 source:
   url: https://www.aleksey.com/xmlsec/download/xmlsec1-{{ version }}.tar.gz
-  sha256: 4003c56b3d356d21b1db7775318540fad6bfedaf5f117e8f7c010811219be3cf
-  patches:
-    - 729.patch
+  sha256: ab5b9a9ffd6960f46f7466d9d91f174ec37e8c31989237ba6b9eacdd816464f2
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
