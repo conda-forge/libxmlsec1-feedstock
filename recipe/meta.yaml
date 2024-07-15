@@ -9,7 +9,7 @@ source:
   sha256: 45ad9078d41ae76844ad2f8651600ffeec0fdd128ead988a8d69e907c57aee75
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
@@ -19,6 +19,7 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
   host:
     - icu
