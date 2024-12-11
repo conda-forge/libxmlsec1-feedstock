@@ -9,7 +9,7 @@ source:
   sha256: 952b626ad3f3be1a4598622dab52fdab2a8604d0837c1b00589f3637535af92f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
@@ -30,7 +30,7 @@ requirements:
     - libxml2
     - libxslt
     - openssl
-    - xz
+    - liblzma-devel
     - zlib
   run:
     # libltdl is linked, which the libtool package provides.

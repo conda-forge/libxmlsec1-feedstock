@@ -11,6 +11,7 @@ export LIBXML_LIBS="-lxml2"
     --enable-shared \
     --enable-static=no \
     --disable-docs \
+    --disable-ripemd160 \
     --with-openssl="${PREFIX}" \
     --with-libxml="${PREFIX}" \
     --with-xslt="${PREFIX}" \
