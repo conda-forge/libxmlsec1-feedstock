@@ -3,9 +3,9 @@ About libxmlsec1-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libxmlsec1-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.aleksey.com/xmlsec/
+Home: https://aleksey.com/xmlsec
 
-Package license: MIT and MPL-1.1
+Package license: MIT AND MPL-1.1
 
 Summary: XML Security Library
 
