@@ -41,7 +41,6 @@ requirements:
     # This is needed to enable dynamic loading support for xmlsec-crypto
     # libraries (--enable-crypto-dl option).
     - ${{ pin_compatible('libtool') }}
-    - ${{ pin_compatible('xz') }}
     - ${{ pin_compatible('zlib') }}
 
 tests:
