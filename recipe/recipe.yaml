@@ -25,12 +25,12 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - make
+    - libtool
   host:
     - icu
     - libgcrypt
     - libgpg-error
     - libiconv
-    - libtool
     - libxml2
     - libxslt
     - openssl
