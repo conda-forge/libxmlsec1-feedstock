@@ -17,9 +17,11 @@ build:
 requirements:
   run_exports:
     # compatibility is not tracked at abi-laboratory, assume same as libxml2
-    - ${{ pin_subpackage('libxmlsec1', max_pin='x.x') }}
+    - ${{ pin_subpackage('libxmlsec1', upper_bound='x.x') }}
   build:
-    - gnuconfig  # [unix]
+    - if: unix
+      then:
+        - gnuconfig
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - make
@@ -46,8 +48,8 @@ tests:
   - script: xmlsec1 --help
 
 about:
-  homepage: https://aleksey.com/xmlsec/
-  license: MIT and MPL-1.1
+  homepage: https://aleksey.com/xmlsec
+  license: MIT AND MPL-1.1
   license_file: Copyright
   summary: XML Security Library
   repository: https://github.com/lsh123/xmlsec
