@@ -25,7 +25,6 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - make
-    - libtool
   host:
     - icu
     - libgcrypt
@@ -36,11 +35,9 @@ requirements:
     - openssl
     - liblzma-devel
     - zlib
+    - libltdl
   run:
-    # libltdl is linked, which the libtool package provides.
-    # This is needed to enable dynamic loading support for xmlsec-crypto
-    # libraries (--enable-crypto-dl option).
-    - ${{ pin_compatible('libtool') }}
+    - ${{ pin_compatible('libltdl') }}
     - ${{ pin_compatible('zlib') }}
 
 tests:
