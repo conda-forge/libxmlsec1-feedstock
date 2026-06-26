@@ -12,6 +12,7 @@ export LIBXML_LIBS="-lxml2"
     --enable-static=no \
     --disable-docs \
     --disable-ripemd160 \
+    --enable-pedantic=no \
     --with-openssl="${PREFIX}" \
     --with-libxml="${PREFIX}" \
     --with-xslt="${PREFIX}" \
