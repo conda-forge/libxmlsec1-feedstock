@@ -1,9 +1,8 @@
 context:
-  name: libxmlsec1
   version: "1.3.12"
 
 package:
-  name: ${{ name }}
+  name: libxmlsec1
   version: ${{ version }}
 
 source:
